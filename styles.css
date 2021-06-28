@@ -1,0 +1,574 @@
+tml{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: inline-block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 2% auto;
+}
+ 
+h1, 
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Styling for top navigation */
+.nav1 {
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav1 {
+    height: 70px;
+}
+
+.nav1 ul li{
+    display: inline-block;
+}
+
+.nav1 ul li a{
+    padding: 10px 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #4A455C;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.juno-logo {
+    width: 25%;
+    margin-right: 3%;
+}
+
+.menu-btn {
+    font-size: 1.5rem;
+    float: right;
+    display: none;
+}
+
+#sliding-menu {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a:hover, 
+a:focus {
+    background-color: #D64C31;
+}
+
+/* styling for heading image and tech challenge intro header */
+.intro-section {
+    padding: 30px;
+    background-color: #D64C31;
+    color: white;
+    position: relative;
+    margin-left: 40%;
+    top: -100px;
+    margin-bottom: -5%;
+}
+
+h1 { 
+    font-size: 4.5rem;
+    margin: 0 5%;
+    font-weight: 400;
+}
+
+.intro-section p {
+    font-size: 1rem;
+    line-height: 2;
+    margin: 0 0 0 5%;
+}
+
+/* styling for blog section */
+main h2 {
+    color: #4A455C;
+    font-size: 5rem;
+    font-weight: 500;
+    margin: 0 0 3% 0; 
+}
+
+.blog-section {
+    display: flex; 
+    flex: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+section { 
+    width: calc((100%/3)*2);
+    display: flex; 
+    flex-direction: column;
+}
+
+aside {
+    width: calc(100%/3);
+    height: 80vh;
+}
+
+.sub-section1 {
+    display: flex; 
+    flex-direction: row;
+    height: 50%;
+    margin-bottom: 3%;
+}
+
+.sub-section2 {
+    margin-right: 5%;
+}
+
+.half-section { 
+    width: 90%;
+    margin-right: 5%;
+}
+
+.information-section {
+    padding: 30px;
+    color: white;
+    background-color: #4A455C;
+    position: relative;
+    top: -20px;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    width: 90%;
+    line-height: 2;
+    font-size: 0.9rem;
+}
+
+h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 0;
+    background-color: #D64C31;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 500;
+}
+
+.about-us-section {
+    padding: 50px;
+    color: white;
+    background-color: #7C7D98;
+    position: relative;
+    top: -60px;
+}
+
+/* styling for related post section */
+.post-section {
+    background-color: #FFF0E7;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 3%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.post-container {
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.one-third-section {
+    width: calc(100%/3);
+}
+
+.one-third-section:not(:last-child) {
+    margin-right: 3%;
+}
+
+.one-third-section .information-section {
+    background-color: #FFFFFF;
+    color: #4A455C;
+}
+
+.one-third-section .information-section button {
+    background-color: #FFFFFF;
+    color:  #4A455C;
+    border: 1px solid #D64C31;
+}
+
+.one-third-section .information-section h4 {
+    color: #D64C31;
+}
+
+/* styling for footer section */
+footer {
+    background-color: #D64C31;
+    background-size: cover;
+    padding: 0.5% 0 3% 0;
+}
+
+footer .wrapper {
+    position: relative;
+}
+
+.juno-logo2 {
+    width: 40%;
+}
+
+.bottom-nav {
+    color: white;
+    font-weight: 500;
+    width: 50%;
+}
+
+.bottom-nav img {
+    margin-bottom: 2%;
+}
+
+.bottom-nav h4 {
+    font-size: 1.5rem;
+}
+
+.contact-section {
+    position: absolute;
+    right: 0;
+    bottom: -12%;
+    padding: 5%;
+    color: white;
+    width: 35%;
+    height: auto;
+    background-color: #4A455C;
+}
+
+.contact-section h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 5% 0 0 0;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    color: rgb(133, 133, 133);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-section button {
+    margin-top: 2%;
+    width: 120px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ffc9aa;
+    color: #4A455C;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.logo {
+    width: 60%;
+    color: white;
+    font-size: 30px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.nav2 ul li a   {
+    color: white;
+    font-weight: 500;
+    padding: 0;
+    text-decoration: none;
+}
+
+.nav2 ul {
+    width: 80%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1050px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav1 {
+        display: block;
+    }
+    
+    .nav1 ul {
+        position: fixed;
+        z-index: 10;
+        top: 80px;
+        width: 100%;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        background-color: white;
+    }
+
+    .nav1 ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    
+    #sliding-menu:checked ~ ul {
+        left: 0;
+    }
+
+    .menu-btn {
+        line-height: 30px;
+    }
+
+    .logo {
+        line-height: 30px;
+    }
+
+    section,
+    aside { 
+        width: 100%;
+        height: auto;
+    }
+
+    aside {
+        display: flex; 
+        flex-direction: row;
+    }
+
+    aside img {
+        width: auto;
+    }
+    
+    .intro-section {
+        margin-left: 0;
+        top: -100px;
+    }
+
+    .blog-section {
+        display: flex; 
+        flex: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 5%;
+    }
+   
+    .half-section:last-child,
+    .sub-section2 {
+        margin-right: 0;
+    }
+
+    .about-us-section {
+        top: 0;
+        padding: 20px;
+    }
+
+    .post-container {
+        display: flex; 
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .one-third-section {
+        width: 100%;
+        display: flex; 
+        flex-direction: row;
+    }
+
+    .one-third-section img {
+        width: auto;
+        margin-bottom: 2%;
+    }
+
+    .one-third-section .information-section {
+       top: 0;
+       margin-bottom: 2%;
+    }
+
+    .bottom-nav {
+        width: 100%;
+    }
+
+    .contact-section {
+        position: relative;
+        width: 100%; 
+        bottom: 0;
+        margin-top: 2%;
+    }
+
+    .juno-logo2 { 
+        width: 20%;
+    }
+
+    h5 {
+        margin: 5% 0;
+    }
+} 
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 750px) {
+    .nav1 {
+        height: 50px;
+        margin: 3% auto;
+    }
+
+    .nav1 ul {
+        top: 50px;
+    }
+
+    .juno-logo {
+        width: 40%;
+    }
+
+    .menu-btn {
+        margin-top: 5px;
+    }
+    
+    .intro-section {
+        padding: 20px;
+        margin-bottom: -10%;
+    }
+
+    aside img {
+        display: none;
+    }
+
+    .about-us-section p {
+        width: 100%;
+    }
+    .sub-section1 {
+        display: flex; 
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .half-section {
+        width: 100%;
+        margin-right: 0;
+        display: flex; 
+        flex-direction: row;
+        margin-bottom: 3%;
+    }
+
+    .half-section img {
+        width: auto;
+        object-fit: fit;
+    }
+
+    .half-section .information-section {
+        top: 0;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    h2, 
+    main h2 {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 600px) {
+    .nav2 ul {
+        width: 100%;
+    }
+
+
+    .juno-logo2 {
+        width: 30%;
+    }
+
+    .intro-section {
+        top: -50px;
+    }
+
+    .intro-section p {
+        font-size: 0.8rem;
+    }
+
+    .half-section {
+        width: 100%;
+        margin-right: 0;
+        display: flex; 
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+
+    .half-section .information-section {
+        top: -20px;
+        padding: 20px;
+    }
+
+    .one-third-section {
+        width: 100%;
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .one-third-section .information-section {
+        top: -20px;
+        padding: 20px;
+    }
+
+    .information-section {
+        padding: 20px;
+    }
+
+    p {
+        line-height: 1.6;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    h4,
+    .contact-section h4 { 
+        font-size: 1rem;
+    }
+ 
+}
